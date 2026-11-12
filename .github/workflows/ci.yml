@@ -34,4 +34,3 @@ jobs:
 
       - name: Run evaluation
         run: pytest tests/evaluation/ -v --timeout=600
-        continue-on-error: true
