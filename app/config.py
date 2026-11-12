@@ -1,8 +1,10 @@
-import os
+from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    model_config = ConfigDict(env_file=".env", extra="ignore")
+
     # API
     api_host: str = "127.0.0.1"
     api_port: int = 8000
@@ -32,7 +34,7 @@ class Settings(BaseSettings):
     groq_model: str = "llama-3.3-70b-versatile"
     ollama_base_url: str = "http://localhost:11434"
     ollama_model: str = "llama3.1:8b"
-    llm_mode: str = "groq"  # groq | ollama | none
+    llm_mode: str = "groq"
 
     # Whisper
     whisper_model: str = "base.en"
@@ -46,10 +48,6 @@ class Settings(BaseSettings):
     data_dir: str = "./data"
     upload_dir: str = "./data/uploads"
     sample_docs_dir: str = "./data/sample_docs"
-
-    class Config:
-        env_file = ".env"
-        extra = "ignore"
 
 
 settings = Settings()

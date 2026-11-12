@@ -20,3 +20,6 @@ streamlit>=1.28.0
 requests>=2.31.0
 torch>=2.0.0
 tokenizers>=0.15.0
+pytest>=8.0
+pytest-timeout>=2.0
+setuptools>=69.5.1
