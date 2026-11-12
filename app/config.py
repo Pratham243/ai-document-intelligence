@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     groq_model: str = "llama-3.3-70b-versatile"
     ollama_base_url: str = "http://localhost:11434"
     ollama_model: str = "llama3.1:8b"
-    llm_mode: str = "groq"
+    llm_mode: str = "groq"  # groq | ollama | none
 
     # Whisper
     whisper_model: str = "base.en"
