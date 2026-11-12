@@ -72,6 +72,8 @@ See [`tests/evaluation/results.json`](tests/evaluation/results.json) — generat
 | p95 latency | `results.json → summary.p95_latency_ms` |
 | Prompt injection block rate | `results.json → summary.prompt_injection_block_rate` |
 
+> **Note:** BLEU-4 and ROUGE-L scores reflect no-LLM mode (raw retrieved chunks returned verbatim). With Groq or Ollama enabled, expect significantly higher answer-quality scores. Retrieval accuracy and safety metrics are LLM-independent.
+
 Re-run the evaluation yourself:
 
 ```bash
@@ -94,7 +96,7 @@ pytest tests/evaluation/ -v -s
 | Backend API | FastAPI + Uvicorn |
 | Frontend | Streamlit |
 | Observability | LangFuse |
-| Safety | Guardrails (regex-based prompt injection detection) |
+| Safety | Regex-based prompt injection detection |
 | Data Versioning | DVC |
 | Evaluation | BLEU-4, ROUGE-L, retrieval accuracy, latency |
 | Testing | pytest |

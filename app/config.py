@@ -1,8 +1,10 @@
-import os
+from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    model_config = ConfigDict(env_file=".env", extra="ignore")
+
     # API
     api_host: str = "127.0.0.1"
     api_port: int = 8000
@@ -46,10 +48,6 @@ class Settings(BaseSettings):
     data_dir: str = "./data"
     upload_dir: str = "./data/uploads"
     sample_docs_dir: str = "./data/sample_docs"
-
-    class Config:
-        env_file = ".env"
-        extra = "ignore"
 
 
 settings = Settings()
