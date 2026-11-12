@@ -1,0 +1,182 @@
+[
+  {
+    "question": "What is the Transformer architecture based on?",
+    "expected_answer": "The Transformer is based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German?",
+    "expected_answer": "The Transformer achieved 28.4 BLEU on the WMT 2014 English-to-German translation task.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does multi-head attention work in the Transformer?",
+    "expected_answer": "Multi-head attention linearly projects queries, keys and values h times with different learned projections, performs attention in parallel on each, then concatenates and projects the results.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the dimensionality of the Transformer model (dmodel)?",
+    "expected_answer": "The dimensionality dmodel is 512, and all sub-layers and embedding layers produce outputs of this dimension.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How does the Transformer handle positional information?",
+    "expected_answer": "The Transformer uses positional encodings based on sine and cosine functions of different frequencies, added to input embeddings.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the Scaled Dot-Product Attention formula look like?",
+    "expected_answer": "Attention(Q, K, V) = softmax(QK^T / sqrt(dk)) V, where queries and keys have dimension dk.",
+    "expected_source_doc": "attention_is_all_you_need.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What does BERT stand for?",
+    "expected_answer": "BERT stands for Bidirectional Encoder Representations from Transformers.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are BERT's two pre-training tasks?",
+    "expected_answer": "BERT uses Masked Language Model (MLM) and Next Sentence Prediction (NSP) as its two pre-training tasks.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What percentage of tokens does BERT mask during pre-training?",
+    "expected_answer": "BERT masks 15% of all WordPiece tokens in each sequence at random during pre-training.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many parameters does BERT-BASE have?",
+    "expected_answer": "BERT-BASE has 110M parameters with L=12 layers, H=768 hidden size, and A=12 attention heads.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What GLUE score did BERT-LARGE achieve?",
+    "expected_answer": "BERT-LARGE achieved a GLUE score of 80.5%, which is 7.7 points above the state of the art.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does BERT differ from GPT in terms of attention?",
+    "expected_answer": "BERT uses bidirectional self-attention where each token can attend to all other tokens, while GPT uses constrained left-to-right attention.",
+    "expected_source_doc": "bert.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is RAG in the context of NLP?",
+    "expected_answer": "RAG (Retrieval-Augmented Generation) combines pre-trained parametric memory with non-parametric memory from external databases for language generation.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between RAG-Sequence and RAG-Token models?",
+    "expected_answer": "RAG-Sequence uses the same retrieved document for the complete sequence, while RAG-Token can use different retrieved documents for each target token.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What Exact Match score did RAG achieve on Natural Questions?",
+    "expected_answer": "RAG achieved 44.5 Exact Match on Natural Questions, compared to 36.6 for REALM and 32.6 for T5-11B.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What generator model does RAG use?",
+    "expected_answer": "RAG uses BART-large as its generator, a pre-trained seq2seq transformer with 400M parameters.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What retriever does the original RAG paper use?",
+    "expected_answer": "RAG uses Dense Passage Retriever (DPR) with a bi-encoder architecture based on BERT-base encoders.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does RAG reduce hallucination?",
+    "expected_answer": "RAG reduces hallucination by conditioning generation on retrieved evidence, making it less likely to generate factually incorrect statements.",
+    "expected_source_doc": "rag_original.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What are the three main limitations of LLMs that RAG addresses?",
+    "expected_answer": "RAG addresses hallucination, outdated knowledge (knowledge cutoff), and lack of attribution (non-transparent reasoning) in LLMs.",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are the three RAG paradigms described in the survey?",
+    "expected_answer": "The three RAG paradigms are Naive RAG (simple retrieve-read), Advanced RAG (with pre/post-retrieval optimization), and Modular RAG (interchangeable components).",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is Reciprocal Rank Fusion and how is it computed?",
+    "expected_answer": "RRF combines multiple ranked lists by computing RRF_score(d) = sum(1/(k + rank_i(d))) where k is typically 60 and rank_i(d) is the rank in each ranking.",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What embedding model dimensions does all-MiniLM-L6-v2 produce?",
+    "expected_answer": "The all-MiniLM-L6-v2 model produces 384-dimensional embeddings.",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What chunking strategies are recommended for RAG systems?",
+    "expected_answer": "Common chunking strategies include fixed-size chunking (e.g. 500 tokens with 50 overlap), recursive character splitting, semantic chunking, and document-structure-aware chunking.",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is hybrid retrieval in RAG?",
+    "expected_answer": "Hybrid retrieval combines dense semantic retrieval with sparse BM25 retrieval to leverage strengths of both approaches, often using Reciprocal Rank Fusion to combine results.",
+    "expected_source_doc": "rag_survey.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many parameters does LLaMA-13B have and how does it compare to GPT-3?",
+    "expected_answer": "LLaMA-13B has 13 billion parameters and outperforms GPT-3 (175B) on most benchmarks despite being more than 10x smaller.",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What training data sources were used for LLaMA?",
+    "expected_answer": "LLaMA was trained on publicly available data including CommonCrawl (67%), C4 (15%), GitHub (4.5%), Wikipedia (4.5%), Books (4.5%), ArXiv (2.5%), and Stack Exchange (2%).",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What architectural improvements does LLaMA use over the standard Transformer?",
+    "expected_answer": "LLaMA uses RMSNorm pre-normalization, SwiGLU activation function instead of ReLU, and Rotary Positional Embeddings (RoPE) instead of absolute positional embeddings.",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What tokenizer does LLaMA use?",
+    "expected_answer": "LLaMA uses a bytepair encoding (BPE) algorithm implemented with SentencePiece for tokenization.",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many tokens was LLaMA trained on?",
+    "expected_answer": "LLaMA was trained on approximately 1.4 trillion tokens after tokenization.",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What optimizer did LLaMA use for training?",
+    "expected_answer": "LLaMA used the AdamW optimizer with beta1=0.9, beta2=0.95, cosine learning rate schedule, weight decay of 0.1 and gradient clipping of 1.0.",
+    "expected_source_doc": "llama.txt",
+    "difficulty": "hard"
+  }
+]

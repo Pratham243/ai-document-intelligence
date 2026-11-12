@@ -1,0 +1,664 @@
+{
+  "summary": {
+    "retrieval_accuracy_top3": 0.9667,
+    "avg_bleu4": 0.0054,
+    "avg_rouge_l": 0.0232,
+    "p50_latency_ms": 596.29,
+    "p95_latency_ms": 705.81,
+    "prompt_injection_block_rate": 1.0,
+    "num_qa_pairs": 30,
+    "num_documents_ingested": 5
+  },
+  "retrieval": {
+    "retrieval_accuracy_top3": 0.9667,
+    "correct": 29,
+    "total": 30,
+    "p50_latency_ms": 596.29,
+    "p95_latency_ms": 705.81,
+    "per_question": [
+      {
+        "question": "What is the Transformer architecture based on?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 1076.33,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 571.25,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does multi-head attention work in the Transformer?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 591.01,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the dimensionality of the Transformer model (dmodel)?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 564.81,
+        "difficulty": "easy"
+      },
+      {
+        "question": "How does the Transformer handle positional information?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 596.85,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What does the Scaled Dot-Product Attention formula look like?",
+        "expected_source": "attention_is_all_you_need.txt",
+        "retrieved_sources": [
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt",
+          "attention_is_all_you_need.txt"
+        ],
+        "hit": true,
+        "latency_ms": 538.61,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What does BERT stand for?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 434.94,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What are BERT's two pre-training tasks?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 574.55,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What percentage of tokens does BERT mask during pre-training?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 524.46,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many parameters does BERT-BASE have?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 520.76,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What GLUE score did BERT-LARGE achieve?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 571.77,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does BERT differ from GPT in terms of attention?",
+        "expected_source": "bert.txt",
+        "retrieved_sources": [
+          "bert.txt",
+          "bert.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 535.39,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is RAG in the context of NLP?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_original.txt",
+          "rag_original.txt",
+          "rag_original.txt"
+        ],
+        "hit": true,
+        "latency_ms": 587.34,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the difference between RAG-Sequence and RAG-Token models?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_original.txt",
+          "rag_original.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 668.31,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What Exact Match score did RAG achieve on Natural Questions?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_original.txt",
+          "rag_original.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 625.09,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What generator model does RAG use?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_original.txt",
+          "rag_original.txt",
+          "rag_original.txt"
+        ],
+        "hit": true,
+        "latency_ms": 597.38,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What retriever does the original RAG paper use?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_original.txt",
+          "rag_original.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 630.34,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does RAG reduce hallucination?",
+        "expected_source": "rag_original.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_survey.txt"
+        ],
+        "hit": false,
+        "latency_ms": 506.54,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What are the three main limitations of LLMs that RAG addresses?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 600.8,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What are the three RAG paradigms described in the survey?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 632.16,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is Reciprocal Rank Fusion and how is it computed?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 648.71,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What embedding model dimensions does all-MiniLM-L6-v2 produce?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "attention_is_all_you_need.txt",
+          "bert.txt"
+        ],
+        "hit": true,
+        "latency_ms": 687.69,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What chunking strategies are recommended for RAG systems?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_survey.txt"
+        ],
+        "hit": true,
+        "latency_ms": 596.29,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is hybrid retrieval in RAG?",
+        "expected_source": "rag_survey.txt",
+        "retrieved_sources": [
+          "rag_survey.txt",
+          "rag_survey.txt",
+          "rag_original.txt"
+        ],
+        "hit": true,
+        "latency_ms": 624.48,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many parameters does LLaMA-13B have and how does it compare to GPT-3?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 594.78,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What training data sources were used for LLaMA?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 633.85,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What architectural improvements does LLaMA use over the standard Transformer?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 705.81,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What tokenizer does LLaMA use?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 496.1,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many tokens was LLaMA trained on?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 617.27,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What optimizer did LLaMA use for training?",
+        "expected_source": "llama.txt",
+        "retrieved_sources": [
+          "llama.txt",
+          "llama.txt",
+          "llama.txt"
+        ],
+        "hit": true,
+        "latency_ms": 577.09,
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "answer_quality": {
+    "avg_bleu4": 0.0054,
+    "avg_rouge_l": 0.0232,
+    "per_question": [
+      {
+        "question": "What is the Transformer architecture based on?",
+        "expected_answer": "The Transformer is based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nAttention Is All You Need\n\nAshish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin\n\nAbstract\n\nThe dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism",
+        "bleu4": 0.0085,
+        "rouge_l": 0.0204,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German?",
+        "expected_answer": "The Transformer achieved 28.4 BLEU on the WMT 2014 English-to-German translation task.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nSelf-attention layers connect all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations. In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length n is smaller than the representation dimensionality d. 5. Training\n\nWe trained our models on the standard WMT 201",
+        "bleu4": 0.007,
+        "rouge_l": 0.0256,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does multi-head attention work in the Transformer?",
+        "expected_answer": "Multi-head attention linearly projects queries, keys and values h times with different learned projections, performs attention in parallel on each, then concatenates and projects the results.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nIn these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective ",
+        "bleu4": 0.0059,
+        "rouge_l": 0.0286,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the dimensionality of the Transformer model (dmodel)?",
+        "expected_answer": "The dimensionality dmodel is 512, and all sub-layers and embedding layers produce outputs of this dimension.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nIn these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective ",
+        "bleu4": 0.0013,
+        "rouge_l": 0.0188,
+        "difficulty": "easy"
+      },
+      {
+        "question": "How does the Transformer handle positional information?",
+        "expected_answer": "The Transformer uses positional encodings based on sine and cosine functions of different frequencies, added to input embeddings.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nIn these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective ",
+        "bleu4": 0.0005,
+        "rouge_l": 0.0172,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What does the Scaled Dot-Product Attention formula look like?",
+        "expected_answer": "Attention(Q, K, V) = softmax(QK^T / sqrt(dk)) V, where queries and keys have dimension dk.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: attention_is_all_you_need.txt]**\nWe compute the dot products of the query with all keys, divide each by sqrt(dk), and apply a softmax function to obtain the weights on the values. In practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed together into matrices K and V. We compute the matrix of outputs as: Attention(Q, K, V) = softmax(Q",
+        "bleu4": 0.0109,
+        "rouge_l": 0.0213,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What does BERT stand for?",
+        "expected_answer": "BERT stands for Bidirectional Encoder Representations from Transformers.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nBERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\n\nJacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova\n\nAbstract\n\nWe introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled tex",
+        "bleu4": 0.0038,
+        "rouge_l": 0.0096,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What are BERT's two pre-training tasks?",
+        "expected_answer": "BERT uses Masked Language Model (MLM) and Next Sentence Prediction (NSP) as its two pre-training tasks.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nWe differentiate the sentences in two ways. First, we separate them with a special token ([SEP]). Second, we add a learned embedding to every token indicating whether it belongs to sentence A or sentence B. 3.3 Pre-training BERT\n\nWe pre-train BERT using two unsupervised tasks. Task 1: Masked LM. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and t",
+        "bleu4": 0.0055,
+        "rouge_l": 0.0219,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What percentage of tokens does BERT mask during pre-training?",
+        "expected_answer": "BERT masks 15% of all WordPiece tokens in each sequence at random during pre-training.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nWe differentiate the sentences in two ways. First, we separate them with a special token ([SEP]). Second, we add a learned embedding to every token indicating whether it belongs to sentence A or sentence B. 3.3 Pre-training BERT\n\nWe pre-train BERT using two unsupervised tasks. Task 1: Masked LM. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and t",
+        "bleu4": 0.0076,
+        "rouge_l": 0.022,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many parameters does BERT-BASE have?",
+        "expected_answer": "BERT-BASE has 110M parameters with L=12 layers, H=768 hidden size, and A=12 attention heads.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nThe contributions of our paper are as follows: We demonstrate the importance of bidirectional pre-training for language representations. We show that pre-trained representations reduce the need for many heavily-engineered task-specific architectures. BERT advances the state of the art for eleven NLP tasks. 2. Related Work\n\nThere is a long history of pre-training general language representations, and we briefly revie",
+        "bleu4": 0.0005,
+        "rouge_l": 0.0179,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What GLUE score did BERT-LARGE achieve?",
+        "expected_answer": "BERT-LARGE achieved a GLUE score of 80.5%, which is 7.7 points above the state of the art.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nWe differentiate the sentences in two ways. First, we separate them with a special token ([SEP]). Second, we add a learned embedding to every token indicating whether it belongs to sentence A or sentence B. 3.3 Pre-training BERT\n\nWe pre-train BERT using two unsupervised tasks. Task 1: Masked LM. In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and t",
+        "bleu4": 0.0088,
+        "rouge_l": 0.0292,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does BERT differ from GPT in terms of attention?",
+        "expected_answer": "BERT uses bidirectional self-attention where each token can attend to all other tokens, while GPT uses constrained left-to-right attention.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: bert.txt]**\nBERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\n\nJacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova\n\nAbstract\n\nWe introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled tex",
+        "bleu4": 0.0002,
+        "rouge_l": 0.017,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is RAG in the context of NLP?",
+        "expected_answer": "RAG (Retrieval-Augmented Generation) combines pre-trained parametric memory with non-parametric memory from external databases for language generation.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_original.txt]**\nRetrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\n\nPatrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Kuttler, Mike Lewis, Wen-tau Yih, Tim Rocktaschel, Sebastian Riedel, Douwe Kiela\n\nAbstract\n\nLarge pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tune",
+        "bleu4": 0.0023,
+        "rouge_l": 0.0206,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the difference between RAG-Sequence and RAG-Token models?",
+        "expected_answer": "RAG-Sequence uses the same retrieved document for the complete sequence, while RAG-Token can use different retrieved documents for each target token.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_original.txt]**\nRAG-Sequence Model: The RAG-Sequence model uses the same retrieved document to generate the complete sequence. It treats the retrieved document as a single latent variable and marginalizes over the top-K retrieved documents. RAG-Token Model: The RAG-Token model can use a different retrieved document for each target token. This allows the generator to use information from multiple documents when generating a ",
+        "bleu4": 0.006,
+        "rouge_l": 0.0269,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What Exact Match score did RAG achieve on Natural Questions?",
+        "expected_answer": "RAG achieved 44.5 Exact Match on Natural Questions, compared to 36.6 for REALM and 32.6 for T5-11B.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_original.txt]**\nRAG-Sequence Model: The RAG-Sequence model uses the same retrieved document to generate the complete sequence. It treats the retrieved document as a single latent variable and marginalizes over the top-K retrieved documents. RAG-Token Model: The RAG-Token model can use a different retrieved document for each target token. This allows the generator to use information from multiple documents when generating a ",
+        "bleu4": 0.0089,
+        "rouge_l": 0.0254,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What generator model does RAG use?",
+        "expected_answer": "RAG uses BART-large as its generator, a pre-trained seq2seq transformer with 400M parameters.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_original.txt]**\nRAG-Sequence Model: The RAG-Sequence model uses the same retrieved document to generate the complete sequence. It treats the retrieved document as a single latent variable and marginalizes over the top-K retrieved documents. RAG-Token Model: The RAG-Token model can use a different retrieved document for each target token. This allows the generator to use information from multiple documents when generating a ",
+        "bleu4": 0.0067,
+        "rouge_l": 0.0246,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What retriever does the original RAG paper use?",
+        "expected_answer": "RAG uses Dense Passage Retriever (DPR) with a bi-encoder architecture based on BERT-base encoders.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_original.txt]**\nRAG-Sequence Model: The RAG-Sequence model uses the same retrieved document to generate the complete sequence. It treats the retrieved document as a single latent variable and marginalizes over the top-K retrieved documents. RAG-Token Model: The RAG-Token model can use a different retrieved document for each target token. This allows the generator to use information from multiple documents when generating a ",
+        "bleu4": 0.0009,
+        "rouge_l": 0.0157,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How does RAG reduce hallucination?",
+        "expected_answer": "RAG reduces hallucination by conditioning generation on retrieved evidence, making it less likely to generate factually incorrect statements.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\n5. Evaluation\n\nEvaluating RAG systems requires assessing multiple aspects:\n\nRetrieval Quality: Measured by metrics like Recall@k, Precision@k, and Mean Reciprocal Rank (MRR). These evaluate whether the correct documents are retrieved. Generation Quality: Assessed using metrics like BLEU, ROUGE-L, and human evaluation. These measure how well the generated answer matches the expected response. Faithfulness: Eval",
+        "bleu4": 0.0017,
+        "rouge_l": 0.0242,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What are the three main limitations of LLMs that RAG addresses?",
+        "expected_answer": "RAG addresses hallucination, outdated knowledge (knowledge cutoff), and lack of attribution (non-transparent reasoning) in LLMs.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nRetrieval-Augmented Generation for Large Language Models: A Survey\n\nYunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Haofen Wang\n\nAbstract\n\nLarge Language Models (LLMs) demonstrate remarkable capabilities but face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged a",
+        "bleu4": 0.0033,
+        "rouge_l": 0.0217,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What are the three RAG paradigms described in the survey?",
+        "expected_answer": "The three RAG paradigms are Naive RAG (simple retrieve-read), Advanced RAG (with pre/post-retrieval optimization), and Modular RAG (interchangeable components).",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nRetrieval-Augmented Generation for Large Language Models: A Survey\n\nYunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Haofen Wang\n\nAbstract\n\nLarge Language Models (LLMs) demonstrate remarkable capabilities but face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged a",
+        "bleu4": 0.0006,
+        "rouge_l": 0.0247,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is Reciprocal Rank Fusion and how is it computed?",
+        "expected_answer": "RRF combines multiple ranked lists by computing RRF_score(d) = sum(1/(k + rank_i(d))) where k is typically 60 and rank_i(d) is the rank in each ranking.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nBM25 excels at exact keyword matching. Hybrid Retrieval: Combines dense and sparse retrieval methods to leverage the strengths of both approaches. Reciprocal Rank Fusion (RRF) is a popular method for combining ranked lists from different retrieval methods. Re-ranking: After initial retrieval, a cross-encoder re-ranker can be used to more accurately score the relevance of retrieved passages. Models like cross-e",
+        "bleu4": 0.0183,
+        "rouge_l": 0.046,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What embedding model dimensions does all-MiniLM-L6-v2 produce?",
+        "expected_answer": "The all-MiniLM-L6-v2 model produces 384-dimensional embeddings.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nBM25 excels at exact keyword matching. Hybrid Retrieval: Combines dense and sparse retrieval methods to leverage the strengths of both approaches. Reciprocal Rank Fusion (RRF) is a popular method for combining ranked lists from different retrieval methods. Re-ranking: After initial retrieval, a cross-encoder re-ranker can be used to more accurately score the relevance of retrieved passages. Models like cross-e",
+        "bleu4": 0.0001,
+        "rouge_l": 0.0098,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What chunking strategies are recommended for RAG systems?",
+        "expected_answer": "Common chunking strategies include fixed-size chunking (e.g. 500 tokens with 50 overlap), recursive character splitting, semantic chunking, and document-structure-aware chunking.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nRetrieval-Augmented Generation for Large Language Models: A Survey\n\nYunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Haofen Wang\n\nAbstract\n\nLarge Language Models (LLMs) demonstrate remarkable capabilities but face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged a",
+        "bleu4": 0.0047,
+        "rouge_l": 0.0284,
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is hybrid retrieval in RAG?",
+        "expected_answer": "Hybrid retrieval combines dense semantic retrieval with sparse BM25 retrieval to leverage strengths of both approaches, often using Reciprocal Rank Fusion to combine results.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: rag_survey.txt]**\nBM25 excels at exact keyword matching. Hybrid Retrieval: Combines dense and sparse retrieval methods to leverage the strengths of both approaches. Reciprocal Rank Fusion (RRF) is a popular method for combining ranked lists from different retrieval methods. Re-ranking: After initial retrieval, a cross-encoder re-ranker can be used to more accurately score the relevance of retrieved passages. Models like cross-e",
+        "bleu4": 0.0036,
+        "rouge_l": 0.034,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many parameters does LLaMA-13B have and how does it compare to GPT-3?",
+        "expected_answer": "LLaMA-13B has 13 billion parameters and outperforms GPT-3 (175B) on most benchmarks despite being more than 10x smaller.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nLLaMA-13B outperforms LaMDA-137B on both benchmarks. LLaMA-65B outperforms PaLM-62B. 4. Instruction Fine-tuning\n\nWe briefly show that fine-tuning on instructions leads to rapidly improving performance on MMLU. A small amount of finetuning improves the performance of LLaMA-65B on MMLU to 68.9%, which is competitive with the best existing language models. 5. Conclusion\n\nIn this paper, we presented a series of languag",
+        "bleu4": 0.012,
+        "rouge_l": 0.0367,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What training data sources were used for LLaMA?",
+        "expected_answer": "LLaMA was trained on publicly available data including CommonCrawl (67%), C4 (15%), GitHub (4.5%), Wikipedia (4.5%), Books (4.5%), ArXiv (2.5%), and Stack Exchange (2%).",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nLLaMA: Open and Efficient Foundation Language Models\n\nHugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Roziere, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample\n\nAbstract\n\nWe introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trill",
+        "bleu4": 0.015,
+        "rouge_l": 0.0307,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What architectural improvements does LLaMA use over the standard Transformer?",
+        "expected_answer": "LLaMA uses RMSNorm pre-normalization, SwiGLU activation function instead of ReLU, and Rotary Positional Embeddings (RoPE) instead of absolute positional embeddings.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nC4 (15%): During exploratory experiments, we observed that using diverse pre-processed CommonCrawl datasets improves performance. Github (4.5%): We use the public GitHub dataset available on Google BigQuery. Wikipedia (4.5%): We add Wikipedia dumps from the June-August 2022 period, covering 20 languages. Books (4.5%): We include two book corpora in our training dataset: the Gutenberg Project, and Books3. ArXiv (2.5",
+        "bleu4": 0.0034,
+        "rouge_l": 0.0206,
+        "difficulty": "hard"
+      },
+      {
+        "question": "What tokenizer does LLaMA use?",
+        "expected_answer": "LLaMA uses a bytepair encoding (BPE) algorithm implemented with SentencePiece for tokenization.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nC4 (15%): During exploratory experiments, we observed that using diverse pre-processed CommonCrawl datasets improves performance. Github (4.5%): We use the public GitHub dataset available on Google BigQuery. Wikipedia (4.5%): We add Wikipedia dumps from the June-August 2022 period, covering 20 languages. Books (4.5%): We include two book corpora in our training dataset: the Gutenberg Project, and Books3. ArXiv (2.5",
+        "bleu4": 0.0058,
+        "rouge_l": 0.0146,
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many tokens was LLaMA trained on?",
+        "expected_answer": "LLaMA was trained on approximately 1.4 trillion tokens after tokenization.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nLLaMA: Open and Efficient Foundation Language Models\n\nHugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Roziere, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample\n\nAbstract\n\nWe introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trill",
+        "bleu4": 0.0015,
+        "rouge_l": 0.0099,
+        "difficulty": "easy"
+      },
+      {
+        "question": "What optimizer did LLaMA use for training?",
+        "expected_answer": "LLaMA used the AdamW optimizer with beta1=0.9, beta2=0.95, cosine learning rate schedule, weight decay of 0.1 and gradient clipping of 1.0.",
+        "generated_answer": "**LLM unavailable \u2014 showing retrieved chunks verbatim:**\n\n**[Source: llama.txt]**\nC4 (15%): During exploratory experiments, we observed that using diverse pre-processed CommonCrawl datasets improves performance. Github (4.5%): We use the public GitHub dataset available on Google BigQuery. Wikipedia (4.5%): We add Wikipedia dumps from the June-August 2022 period, covering 20 languages. Books (4.5%): We include two book corpora in our training dataset: the Gutenberg Project, and Books3. ArXiv (2.5",
+        "bleu4": 0.0077,
+        "rouge_l": 0.0332,
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "safety": {
+    "total_adversarial": 10,
+    "blocked": 10,
+    "block_rate": 1.0,
+    "per_prompt": [
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      },
+      {
+        "blocked": true
+      }
+    ]
+  }
+}
